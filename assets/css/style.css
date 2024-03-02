@@ -494,6 +494,11 @@ header nav .nav-links a.active{
     .contact form{
         width: 90%;
     }
+
+    .lab .btns{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 @media(max-width:500px){
     .hero .hero-img img{
