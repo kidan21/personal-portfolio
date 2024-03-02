@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Arial&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background: #365f1f;
+}
+
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+header nav ul li a:hover {
+    color: #666;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 0;
+    margin-top: 80px;
+    background: url('../img/car.png') no-repeat center center/cover;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 20px 0;
+    color: #365f1f;
+    text-align: center;
+    margin-block: 80px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #5f0606;
+    text-align: center;
+}
+
+.featured-cars {
+    padding: 20px 0;
+    background: #f4f4f4;
+}
+
+.featured-cars h1 {
+    font-size: 3em;
+    margin: 20px 0;
+    color: #365f1f;
+    text-align: center;
+}
+
+.featured-cars p {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #333;
+    text-align: center;
+}
+
+.cars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.car {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.car img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.car h2 {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #365f1f;
+}
+
+.car p {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #333;
+}
+
+.about {
+    padding: 20px 0;
+    background: #f4f4f4;
+}
+
+.about h1 {
+    font-size: 3em;
+    margin: 20px 0;
+    color: #365f1f;
+    text-align: center;
+}
+
+.about p {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #333;
+    text-align: center;
+}
+
+.courses {
+    padding: 20px 0;
+    background: #f4f4f4;
+    width: 100%;
+}
+
+.courses h1 {
+    font-size: 3em;
+    margin: 20px 0;
+    color: #365f1f;
+    text-align: center;
+}
+
+.courses h2 {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #333;
+    text-align: center;
+}
+
+.courses table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.courses th, .courses td {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.courses th {
+    background: #365f1f;
+    color: #fff;
+}
+
+.active-course {
+    color: #365f1f;
+}
+.courses tr:nth-child(even){background-color: #8b8a8a;}
+
+footer {
+    padding: 20px 0;
+    background: #365f1f;
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (max-width: 625px) {
+    .container {
+        padding: 5px;
+    }
+}

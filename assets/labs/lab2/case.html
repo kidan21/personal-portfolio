@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function titleCase(string) {
+        var result = string.toLowerCase().split(" ").map(function(value) {
+            return value.replace(value.charAt(0), value.charAt(0).toUpperCase());
+        });
+        return result.join(" ");
+    }
+
+    document.write(titleCase("Title Case"))
+</script>
+
+</body>
+</html>

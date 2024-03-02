@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- //type.htm -->
+    <title>Determining Type Example 1</title>
+    <!-- <script type="text/javascript">
+        var s = "Nicholas";
+        var b = true;
+        var i = 22;
+        let u;
+        let n = null;
+        let o = new Object();
+
+        alert(typeof s);   //string
+        alert(typeof i);   //number
+        alert(typeof b);   //Boolean
+        alert(typeof u);   //undefined
+        alert(typeof n);   //object
+        alert(typeof o);   //object
+
+    </script> -->
+
+    <!-- //alert.htm -->
+    <!-- <p>
+      The current date and time is:
+      <script type="text/javascript">
+        document.write("<strong>" + new Date().toString() + "</strong>");
+      </script>
+    </p> -->
+
+    <!-- Function -->
+    <!-- <script type="text/javascript">
+        function sayHello()
+        {
+            document.write ("Hello there!");
+        }
+
+        function concatenate(first, last)
+        {
+            var full;
+            full = first + last;
+            return full;
+        }
+
+        function secondFunction()
+        {
+            var result;
+            result = concatenate('Zara', 'Ali');
+            document.write (result );
+        }
+
+
+    </script> -->
+  </head>
+  <body>
+    <!-- arrays.html -->
+    <!-- <script>
+        var emp=new Array("Jai","Vijay","Smith");
+        for (i=0;i<emp.length;i++){
+            document.write(emp[i] + "<br>");
+        }
+
+        var colors = ["red", "blue"];
+        colors.push("brown");              //add another item
+        colors[3] = "black";               //add an item
+        alert(colors.length);  //4
+
+        var item = colors.pop();           //get the last item
+        alert(item);  //"black"
+
+
+        var count = colors.push("yellow", "green");       //push two items
+        alert(count);  //2
+
+        count = colors.push("black");                  //push another item on
+        alert(count);  //3
+
+        var item = colors.shift();                     //get the first item
+        alert(item);   //"red"
+        alert(colors.length);  //2
+
+        var count = colors.unshift("red", "green");    //push two items
+        alert(count);  //2
+
+        count = colors.unshift("black");               //push another item on
+        alert(count);  //3
+
+        var item = colors.pop();                     //get the first item
+        alert(item);   //"green"
+        alert(colors.length);  //2
+
+        var values = [1, 2, 3, 4, 5];
+        values.reverse();
+        alert(values);
+
+        var values = [0, 1, 5, 10, 15];
+        values.sort();
+        alert(values);
+    </script> -->
+
+    <!-- case.html -->
+    <!-- <script>
+        function titleCase(string) {
+            var result = string.toLowerCase().split(" ").map(function(value) {
+                return value.replace(value.charAt(0), value.charAt(0).toUpperCase());
+            });
+            return result.join(" ");
+        }
+
+        document.write(titleCase("Title Case"))
+    </script> -->
+
+    <!-- conditionalOperator -->
+    <!-- <script type="text/javascript">
+
+        var num1 = 10;
+        var num2 = 25;
+        var num3 = (num2 > num1) ? num2 : num1;
+        alert(num3);   //25
+
+    </script> -->
+
+    <!-- Constructor -->
+    <!-- <script type="text/javascript">
+
+        function Person(name, age, job){
+            this.name = name;
+            this.age = age;
+            this.job = job;
+            this.sayName = function(){
+                alert(this.name);
+            };
+        }
+
+        var person1 = new Person("Nicholas", 29, "Software Engineer");
+        var person2 = new Person("Greg", 27, "Doctor");
+
+        person1.sayName();   //"Nicholas"
+        person2.sayName();   //"Greg"
+
+        alert(person1 instanceof Object);  //true
+        alert(person1 instanceof Person);  //true
+        alert(person2 instanceof Object);  //true
+        alert(person2 instanceof Person);  //true
+
+        alert(person1.constructor == Person);  //true
+        alert(person2.constructor == Person);  //true
+
+        alert(person1.sayName == person2.sayName);  //false
+
+
+    </script> -->
+
+    <!-- Date -->
+    <!-- Current Time: <span id="txt"></span>
+    <script>
+      window.onload = function () {
+        getTime();
+      };
+      function getTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        // add a zero in front of numbers<10
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById("txt").innerHTML = h + ":" + m + ":" + s;
+        setTimeout(function () {
+          getTime();
+        }, 1000);
+      }
+      //setInterval("getTime()",1000);//another way
+      function checkTime(i) {
+        if (i < 10) {
+          i = "0" + i;
+        }
+        return i;
+      }
+    </script> -->
+
+    <!-- Dynamic Script -->
+    <!-- <p>
+      You should see an alert saying &quot;hi&quot; after clicking the button.
+    </p>
+    <input type="button" value="Add Script" onclick="addScript()" />
+
+    <script type="text/javascript">
+      function addScript() {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.text = "function sayHi(){alert('hi');}";
+        document.body.appendChild(script);
+        sayHi();
+      }
+    </script> -->
+
+    <!-- Email Filter -->
+    <!-- <script>
+        const emails = ['germancutraro@hotmail.com', 'germancutraro', 'johndoe@gmail.com', 'notAndEmail', 'trucky@gmail'];
+        const foo = emails.filter((email) => email.includes('@') && email.endsWith('.com'));
+        document.write("Valid Emails=> ",foo);
+    </script> -->
+
+    <!-- Even Numbers -->
+    <!-- <script>
+        const numbers = [0, 1, 2, 4, 7, 20, 36, 50, 312, 344, 21, 87, 33, 34, 81, 100,102];
+        const evens = numbers.filter( n => n % 2 === 0);
+        document.write(evens)
+    </script> -->
+
+    <!-- Factorial -->
+    <!-- <script>
+        function factorialNumber(number) {
+            return (number === 0) ? 1 : number * factorialNumber(number - 1);
+        }
+        document.write(factorialNumber(4));
+    </script> -->
+
+    <!-- Form -->
+    <!-- <form action="/cgi-bin/test.cgi" name="myForm" onsubmit="return(validate());">
+        <table cellspacing="2" cellpadding="2" border="1">
+
+            <tr>
+                <td align="right">Name</td>
+                <td><input type="text" name="Name" /></td>
+            </tr>
+
+            <tr>
+                <td align="right">EMail</td>
+                <td><input type="text" name="EMail" /></td>
+            </tr>
+
+            <tr>
+                <td align="right">Zip Code</td>
+                <td><input type="text" name="Zip" /></td>
+            </tr>
+
+            <tr>
+                <td align="right">Country</td>
+                <td>
+                    <select name="Country">
+                        <option value="-1" selected>[choose yours]</option>
+                        <option value="1">USA</option>
+                        <option value="2">UK</option>
+                        <option value="3">INDIA</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right"></td>
+                <td><input type="submit" value="Submit" /></td>
+            </tr>
+
+        </table>
+    </form>
+
+
+    <script type="text/javascript">
+        // Form validation code will come here.
+        function validate()
+        {
+
+            if( document.myForm.Name.value == "" )
+            {
+                alert( "Please provide your name!" );
+                document.myForm.Name.focus() ;
+                return false;
+            }
+
+            if( document.myForm.EMail.value == "" )
+            {
+                alert( "Please provide your Email!" );
+                document.myForm.EMail.focus() ;
+                return false;
+            }
+
+            if( document.myForm.Zip.value == "" ||
+                isNaN( document.myForm.Zip.value ) ||
+                document.myForm.Zip.value.length != 5 )
+            {
+                alert( "Please provide a zip in the format #####." );
+                document.myForm.Zip.focus() ;
+                return false;
+            }
+
+            if( document.myForm.Country.value == "-1" )
+            {
+                alert( "Please provide your country!" );
+                return false;
+            }
+            return( true );
+            function validateEmail()
+            {
+                var emailID = document.myForm.EMail.value;
+                atpos = emailID.indexOf("@");
+                dotpos = emailID.lastIndexOf(".");
+
+                if (atpos < 1 || ( dotpos - atpos < 2 ))
+                {
+                    alert("Please enter correct email ID")
+                    document.myForm.EMail.focus() ;
+                    return false;
+                }
+                return( true );
+            }
+        }
+    </script> -->
+
+    <!-- Function -->
+    <!-- <p>Click the following button to call the function</p>
+
+    <form>
+      <input type="button" onclick="sayHello()" value="Say Hello" />
+    </form>
+
+    <p>Use different text in write method and then try...</p>
+
+    <p>Click the following button to call the function</p>
+
+    <form>
+      <input type="button" onclick="secondFunction()" value="Call Function" />
+    </form> -->
+
+    <!-- IF Statement -->
+
+    <!-- <script type="text/javascript">
+        var age = 15;
+
+        if( age > 18 ){
+            document.write("<b>Qualifies for driving</b>");
+        }
+
+        else{
+            document.write("<b>Does not qualify for driving</b>");
+        }
+    </script>
+
+    <p>Set the variable to different value and then try...</p> -->
+
+    <!-- Longest word -->
+    <!-- <script>
+        function longestWord(string) {
+            return string.split(" ").sort(function(a, b) { return b.length - a.length; })[0].length;
+        }
+
+        document.write(longestWord("Adama Science and Technology University"))
+    </script> -->
+
+    <!-- Loops -->
+    <!-- <script>
+        for (i=1; i<=5; i++)
+        {
+            document.write(i + "<br/>")
+        }
+
+
+        var i=11;
+        while (i<=15)
+        {
+            document.write(i + "<br/>");
+            i++;
+        }
+
+        var i=21;
+        do{
+            document.write(i + "<br/>");
+            i++;
+        }while (i<=25);
+    </script> -->
+
+    <!-- Map -->
+    <!-- <script>
+        const persons = [
+            {name: 'John', age: 27},
+            {name: 'Nicholas', age: 16},
+            {name: 'Adney', age: 15},
+            {name: 'Anton', age: 46},
+        ];
+        const adults = persons.filter(person => person.age > 18);
+        const names = adults.map(n => n.name); //You can use map for the new array generate by filter, or create a for loop like below
+        // for (person of adults) {
+        //   console.log(person.name);
+        // }
+        document.write(names);
+    </script> -->
+
+    <!-- Math -->
+    <!-- <script>
+        var max = Math.max(3, 54, 32, 16);
+        alert(max);    //54
+
+        var min = Math.min(3, 54, 32, 16);
+        alert(min);
+        var num = Math.floor(Math.random() * 10 + 1);
+        alert(num);
+        var num = Math.floor(Math.random() * 9 + 2);
+        alert(num);
+
+
+        function selectFrom(lowerValue, upperValue) {
+            var choices = upperValue - lowerValue + 1;
+            return Math.floor(Math.random() * choices + lowerValue);
+        }
+
+        var num = selectFrom(2, 10);
+        alert(num);   //number between 2 and 10 (inclusive)
+
+        var colors = ["red", "green", "blue", "yellow", "black", "purple", "brown"];
+        var color = colors[selectFrom(0, colors.length-1)];
+        alert(color);  //any of the strings in the array
+
+
+        alert(Math.ceil(25.9));     //26
+        alert(Math.ceil(25.5));     //26
+        alert(Math.ceil(25.1));     //26
+
+        alert(Math.round(25.9));    //26
+        alert(Math.round(25.5));    //26
+        alert(Math.round(25.1));    //25
+
+        alert(Math.floor(25.9));    //25
+        alert(Math.floor(25.5));    //25
+        alert(Math.floor(25.1));    //25
+    </script> -->
+
+    <!-- min -->
+    <!-- <script>
+        let a=9;
+        let b=20;
+
+       const min_v3 = (9, 99) => 9 < 99 ? 9 : 99;
+       alert(min_v3)
+   </script> -->
+
+
+  </body>
+</html>

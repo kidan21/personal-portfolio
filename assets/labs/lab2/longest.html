@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function longestWord(string) {
+        return string.split(" ").sort(function(a, b) { return b.length - a.length; })[0].length;
+    }
+
+    document.write(longestWord("Adama Science and Technology University"))
+</script>
+</body>
+</html>

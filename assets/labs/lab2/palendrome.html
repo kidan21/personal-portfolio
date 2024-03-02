@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function palindromeVerification(string) {
+        var result = string.toLowerCase().replace(/[\W_]/g, '');
+        return result.split('').reverse().join('') === result;
+    }
+
+    document.write(palindromeVerification("Adama",))
+
+    document.write(palindromeVerification("AdamadA"))
+
+</script>
+</body>
+</html>

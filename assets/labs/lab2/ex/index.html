@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Random Color</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input {
+        margin-bottom: 10px;
+      }
+      button {
+        margin-top: 10px;
+      }
+
+      #fullName {
+        font-size: 24px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Name: <span id="fullName"></span></h3>
+    <form>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required />
+      <br />
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required />
+      <br />
+      <button type="submit">Submit</button>
+      <button type="button" id="increase">Increase Font Size</button>
+    </form>
+
+    <script>
+      // Random color array
+      var colors = ["red", "blue", "green", "yellow"];
+      var i = 0;
+      document
+        .querySelector("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          var firstName = document.getElementById("firstName").value;
+          var lastName = document.getElementById("lastName").value;
+          var fullName = firstName + " " + lastName;
+
+          i = i < colors.length ? i : 0;
+          var color = colors[i];
+          i++;
+
+          //   var randomColor =
+          //     "#" + Math.floor(Math.random() * 16777215).toString(16);
+          document.getElementById("fullName").textContent = fullName;
+          document.getElementById("fullName").style.color = color; //randomColor;
+        });
+
+      // Increase font size
+      document
+        .getElementById("increase")
+        .addEventListener("click", function () {
+          var fullName = document.getElementById("fullName");
+          var style = window
+            .getComputedStyle(fullName, null)
+            .getPropertyValue("font-size");
+          var fontSize = parseFloat(style);
+          fullName.style.fontSize = fontSize + 2 + "px";
+        });
+    </script>
+  </body>
+</html>

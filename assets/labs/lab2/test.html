@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function range(start, end, step = start <= end ? 1 : -1) {
+        let outputArray = [];
+        for (let i = start; step == 1 ? i <= end : end <= i; i += step) {
+            outputArray.push(i);
+        }
+        return outputArray;
+    }
+    function sum(coefs) {
+        let result = 0;
+        for (let coef of coefs) {
+            result += coef;
+        }
+        return result;
+    }
+
+    function reverseArray_v1(inputArray) {
+        let outputArray = [];
+        for (let i = inputArray.length - 1; i >= 0; i--) {
+            outputArray.push(inputArray[i]);
+        }
+        return outputArray;
+    }
+
+
+    // alert(range(1,10))
+
+    let arrays = [[1, 2, 3], [4, 5], [6]];
+
+
+
+    alert(arrays.reduce((a, b) => a.concat(b)));
+alert(reverseArray_v1([21,3,4,66,7,8,9,88,7,66,554]))</script>
+</body>
+</html>

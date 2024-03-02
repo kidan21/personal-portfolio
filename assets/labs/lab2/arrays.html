@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var emp=new Array("Jai","Vijay","Smith");
+    for (i=0;i<emp.length;i++){
+        document.write(emp[i] + "<br>");
+    }
+
+    var colors = ["red", "blue"];
+    colors.push("brown");              //add another item
+    colors[3] = "black";               //add an item
+    alert(colors.length);  //4
+
+    var item = colors.pop();           //get the last item
+    alert(item);  //"black"
+
+
+    var count = colors.push("yellow", "green");       //push two items
+    alert(count);  //2
+
+    count = colors.push("black");                  //push another item on
+    alert(count);  //3
+
+    var item = colors.shift();                     //get the first item
+    alert(item);   //"red"
+    alert(colors.length);  //2
+
+    var count = colors.unshift("red", "green");    //push two items
+    alert(count);  //2
+
+    count = colors.unshift("black");               //push another item on
+    alert(count);  //3
+
+    var item = colors.pop();                     //get the first item
+    alert(item);   //"green"
+    alert(colors.length);  //2
+
+    var values = [1, 2, 3, 4, 5];
+    values.reverse();
+    alert(values);
+
+    var values = [0, 1, 5, 10, 15];
+    values.sort();
+    alert(values);
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    var stringObject = new String("hello world");
+    var stringValue = "hello world";
+
+    document.write(typeof stringObject ,"</br>");   //"object"
+    document.write(typeof stringValue,"</br>");    //"string"
+    document.write(stringObject instanceof String,"</br>");  //true
+    document.write(stringValue instanceof String,"</br>");   //false
+
+    document.write(stringValue.indexOf("o"),"</br>");         //4
+    document.write(stringValue.lastIndexOf("o"),"</br>");     //7
+    document.write(stringValue.indexOf("o", 6),"</br>");         //7
+    document.write(stringValue.lastIndexOf("o", 6),"</br>");     //4
+
+    document.write(stringValue.slice(3),"</br>");        //"lo world"
+    document.write(stringValue.substring(3),"</br>");    //"lo world"
+    document.write(stringValue.substr(3),"</br>");       //"lo world"
+    document.write(stringValue.slice(3, 7),"</br>");     //"lo w"
+    document.write(stringValue.substring(3,7),"</br>");  //"lo w"
+    document.write(stringValue.substr(3, 7),"</br>");    //"lo worl"
+
+    document.write(stringValue.slice(-3),"</br>");         //"rld"
+    document.write(stringValue.substring(-3),"</br>");     //"hello world"
+    document.write(stringValue.substr(-3),"</br>");        //"rld"
+    document.write(stringValue.slice(3, -4),"</br>");      //"lo w"
+    document.write(stringValue.substring(3, -4),"</br>");  //"hel"
+    document.write(stringValue.substr(3, -4),"</br>");
+
+    var text = "cat, bat, sat, fat";
+    var pattern = /.at/;
+
+    var matches = text.match(pattern);
+    alert(matches.index);        //0
+    alert(matches[0]);           //"cat"
+    alert(pattern.lastIndex);
+    var pos = text.search(/at/);
+    alert(pos);   //1
+
+    var result = text.replace("at", "ond");
+    alert(result);    //"cond, bat, sat, fat"
+
+    result = text.replace(/at/g, "ond");
+    alert(result);    //"cond, bond, sond, fond"
+
+    result = text.replace(/(.at)/g, "word ($1)");
+    alert(result);
+</script>
+</body>
+</html>

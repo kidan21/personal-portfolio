@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Heading</title>
+</head>
+
+<body>
+  <h1>This is H1Tag</h1>
+  <br />
+  <h2>This is H2 Tag</h2>
+  <br />
+  <h3>This is H3 Tag</h3>
+  <br />
+  <h4>This is H4 Tag</h4>
+  <br />
+  <h5>This is H5 Tag</h5>
+  <br />
+  <h6>This is H6 Tag</h6>
+
+  <!-- HTML Text Formatting -->
+
+  <h1>HTML Text Formatting</h1>
+  <p>This text is normal.</p>
+
+  <p><b>This text is bold.</b></p>
+  <p><strong>This text is strong.</strong></p>
+  <p><i>This text is italic.</i></p>
+  <p><em>This text is emphasized.</em></p>
+  <h2>HTML <small>Small</small> Formatting</h2>
+  <p>My favorite color is <del>blue</del> red.</p>
+  <p>My favorite <ins>color</ins> is red.</p>
+  <p>This is <sub>subscripted</sub> text.</p>
+  <p>This is <sup>superscripted</sup> text.</p>
+
+  <!-- Links -->
+
+  <h2>Links</h2>
+
+  <p>Click any of the following links</p>
+  <a href="google.com" target="_blank">Opens in New</a> |
+  <a href="google.com" target="_self">Opens in Self</a> |
+  <a href="google.com" target="_parent">Opens in Parent</a> |
+  <a href="google.com" target="_top">Opens in Body</a>
+
+  <h2>Image Links</h2>
+
+  <a href="google.com"><img src="images/1.jpg" alt="" /> Image Link</a>
+
+  <!-- Basic Marquee -->
+
+  <p>Basic Marquee</p>
+  <marquee>This is basic example of marquee</marquee>
+
+  <p>Marquee with Half width of the screen</p>
+  <marquee width="50%">This example will take only 50% width</marquee>
+  <p>Marquee moves to right direction</p>
+  <marquee direction="right">This text will scroll from left to right</marquee>
+  <p>Marquee Moves Upward Direction</p>
+  <marquee direction="up">This text will scroll from bottom to up</marquee>
+  <p>Scroll Marquee</p>
+  <marquee width="100%" behavior="scroll" bgcolor="pink">
+    This is an example of a scroll marquee...
+  </marquee>
+  <marquee width="100%" behavior="alternate" bgcolor="pink">
+    This is an example of a alternate marquee...
+  </marquee>
+
+  <p>Marquee With Style</p>
+  <marquee
+    width="400px"
+    height="100px"
+    behavior="alternate"
+    style="border: 2px solid red"
+  >
+    <marquee behavior="alternate"> Nested marquee... </marquee>
+  </marquee>
+
+  <p>Image Marquee</p>
+  <marquee behavior="" direction=""><img src="images/3.jpg" alt="" /></marquee>
+
+  <!-- Iframe -->
+  <p>Document content goes here...</p>
+
+  <iframe src="07_images.html" width="555" height="200"> Images.html </iframe>
+  <iframe src="10_tables.html" height="700" width="600"> Tables</iframe>
+  <iframe src="07_images.html" width="555" height="200"> Images.html </iframe>
+  <iframe src="www.google.com" frameborder="0" width="500" height="200"
+    >Google</iframe
+  >
+  <iframe src="www.youtube.com" frameborder="0" width="500" height="200"
+    >Youtube</iframe
+  >
+  <iframe
+    width="420"
+    height="315"
+    src="https://www.youtube.com/embed/tgbNymZ7vqY"
+  >
+  </iframe>
+
+  <iframe
+    width="420"
+    height="315"
+    src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1"
+  >
+  </iframe>
+  <p>Document content also go here...</p>
+
+  <!-- Html List -->
+
+  <h2>An unordered HTML list</h2>
+
+  <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+  <!--disc style list-->
+  <ul style="list-style-type: disc">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  <!--circle style list-->
+  <ul style="list-style-type: circle">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  <!--Square style List-->
+  <ul style="list-style-type: square">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  <!--None Style List-->
+  <ul style="list-style-type: none">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+  <!--Orderd List-->
+  <ol type="1">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+  <!--List Ordered By Capital Letter-->
+  <ol type="A">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+  <!--List Ordered By Small Letter-->
+  <ol type="a">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+  <!--List Ordered By ROman Numbers-->
+  <ol type="I">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+  <ol type="i">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+  <!--Description Lists-->
+  <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>
+
+  <!--SubList Example-->
+  <ul>
+    <li>Coffee</li>
+    <li>
+      Tea
+      <ul>
+        <li>Black tea</li>
+        <li>Green tea</li>
+      </ul>
+    </li>
+    <li>Milk</li>
+  </ul>
+
+  <ol start="50">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+  <!-- Styling Images -->
+
+  <h2>Styling Images</h2>
+  <img src="images/5.jpg" alt="HTML5 Icon" width="1000px" height="100px" />
+
+  <p>
+    The image below uses the style attribute, where the width is set to 128
+    pixels which overrides the stylesheet:
+  </p>
+  <img src="images/1.jpg" style="width: 500px; height: 500px" />
+  <img src="https://image-address-here" style="width: 104px; height: 142px" />
+  <a href="google.com">
+    <img
+      src="images/2.jpg"
+      alt="HTML tutorial"
+      style="width: 420px; height: 420px; border: 0 solid red"
+    />
+  </a>
+
+  <p>
+    <img src="images/3.jpg" style="float: right; width: 200px; height: 200px" />
+    The image will float to the right of the text.
+  </p>
+
+  <p>
+    <img
+      src="images/4.jpg"
+      style="float: left; width: 150px; height: 150px"
+    /><br /><br />
+    The image will float to the left of the text.
+  </p>
+
+  <!-- Media -->
+
+  <h1>Video 1</h1>
+  <video width="320" height="240" controls>
+    <source src="video/02.mp4" type="video/mp4" />
+  </video>
+
+  <h1>AutoPlay Video</h1>
+  <video width="320" height="240" autoplay>
+    <source src="video/01.mp4" type="video/mp4" />
+  </video>
+  <h1>Audio 1</h1>
+  <audio controls>
+    <source src="audio/01.mp3" type="audio/mp3" />
+  </audio>
+
+  <!-- Forms -->
+  <form action="/action_page.php">
+    <fieldset>
+        <legend>Personal information:</legend>
+        First name:<br>
+        <input type="text" name="firstname"  required><br>
+        Last name:<br>
+        <input type="text" name="lastname"   required><br>
+        Phone Number <br>
+        <input type="number" value="Phone number Here" required><br>
+        Gender <br>
+        <input type="radio" name="gender" value="male" checked > Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        HTML Or CSS <br>
+        <input type="checkbox" name="HTML " value="HTML"> I Know HTML<br>
+        <input type="checkbox" name="CSS" value="CSS"> I Know CSS <br>
+         Select Your Course <br>
+        <select name="courses"required >
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="c++">C++</option>
+            <option value="PHP">PHP</option>
+        </select>
+        Choose Your Color <br>
+        <input type="color" name="color" required><br>
+        Choose Your Date <br>
+        <input type="date" name="date" required><br>
+        Choose Local Date time <br>
+        <input type="datetime-local" required><br>
+        Enter  Email <br>
+        <input type="email" required><br>
+        Enter Password <br>
+        <input type="password" required><br>
+
+        Enter URL <br>
+        <input type="url" required><br>
+        Browse File <br>
+        <input type="file" required><br><br>
+        <input type="reset" value="Reset"><br><br>
+        <input type="submit" value="Submit">
+    </fieldset>
+
+</form>
+
+<!--Table  -->
+<h2>HTML Table</h2>
+
+
+<table width="400" >
+    <tr>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Department</th>
+        <th>GPA</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Male</td>
+        <td>EE</td>
+        <td>3.0</td>
+    </tr>
+    <tr>
+        <td>Helen</td>
+        <td>Female</td>
+        <td>Civil</td>
+        <td>3.6</td>
+    </tr>
+    <tr>
+        <td>Mr X</td>
+        <td>Male</td>
+        <td>Mech</td>
+        <td>3.7</td>
+    </tr>
+
+</table>
+<h1>Table Borders</h1>
+<table border = "1" cellpadding = "5" cellspacing = "5"  width="500">
+    <tr>
+        <th>Name</th>
+        <th>Salary</th>
+    </tr>
+    <tr>
+        <td>Ramesh Raman</td>
+        <td>5000</td>
+    </tr>
+    <tr>
+        <td>Shabbir Hussein</td>
+        <td>7000</td>
+    </tr>
+</table>
+
+<h1>Table Row Span col span</h1>
+<table border = "1">
+    <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+    </tr>
+    <tr>
+        <td rowspan = "2">Row 1 Cell 1</td>
+        <td>Row 1 Cell 2</td>
+        <td>Row 1 Cell 3</td>
+    </tr>
+    <tr>
+        <td>Row 2 Cell 2</td>
+        <td>Row 2 Cell 3</td>
+    </tr>
+    <tr>
+        <td colspan = "3">Row 3 Cell 1</td>
+    </tr>
+</table>
+
+<h1>Table Styles</h1>
+<table border = "1" bordercolor = "red" bgcolor = "yellow">
+    <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+    </tr>
+    <tr>
+        <td rowspan = "2">Row 1 Cell 1</td>
+        <td>Row 1 Cell 2</td>
+        <td>Row 1 Cell 3</td>
+    </tr>
+    <tr>
+        <td>Row 2 Cell 2</td>
+        <td>Row 2 Cell 3</td>
+    </tr>
+    <tr>
+        <td colspan = "3">Row 3 Cell 1</td>
+    </tr>
+</table>
+
+<h1>Table With Image Background</h1>
+<table border = "1" bordercolor = "green" background = "images/1.jpg" width="500" height="300">
+    <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+    </tr>
+    <tr>
+        <td rowspan = "2">Row 1 Cell 1</td>
+        <td>Row 1 Cell 2</td><td>Row 1 Cell 3</td>
+    </tr>
+    <tr>
+        <td>Row 2 Cell 2</td>
+        <td>Row 2 Cell 3</td>
+    </tr>
+    <tr>
+        <td colspan = "3">Row 3 Cell 1</td>
+    </tr>
+</table>
+<h1>Nested Table</h1>
+<table border = "1" width = "100%">
+
+    <tr>
+        <td>
+            <table border = "1" width = "100%">
+                <tr>
+                    <th>Name</th>
+                    <th>Salary</th>
+                </tr>
+                <tr>
+                    <td>Ramesh Raman</td>
+                    <td>5000</td>
+                </tr>
+                <tr>
+                    <td>Shabbir Hussein</td>
+                    <td>7000</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+</table>
+
+<!-- Objects  -->
+<object width="420" height="315">
+    <param name="movie" value="http://www.youtube.com/v/_OBlgSz8sSM?version=3&amp;hl=en_US"></param>
+    <param name="allowFullScreen" value="true"></param>
+    <param name="allowscriptaccess" value="always"></param>
+    <embed src="http://www.youtube.com/v/_OBlgSz8sSM?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
+</object>
+
+
+
+</body>
